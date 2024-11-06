@@ -1,0 +1,110 @@
+body{
+    background-color: rgba(0, 0, 0, 0.308);
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjJiYXRjaDUta3VsLTAzLmpwZw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button:disabled {
+    opacity: 0.5; /* Make disabled buttons look faded */
+    cursor: not-allowed; 
+}
+
+#gun, #water, #snake {
+    height: 100px;
+    width: 150px;
+    padding: 15px;
+    border: 5px solid rgb(0, 255, 157);
+    margin: 3px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Smooth transition for scaling and border */
+}
+
+#gun {
+    background-image: url(https://img.freepik.com/free-vector/gun-pistol-with-bullets-cartoon-vector-icon-illustration-holiday-object-icon-concept-isolated-flat_138676-5785.jpg);  
+}
+
+#water {
+    background-image: url(https://i.pinimg.com/736x/9e/9f/13/9e9f13b9a85c2b54900475394db9d973.jpg); 
+}
+
+#snake {
+    background-image: url(https://pics.craiyon.com/2024-09-12/zxDdn6hCQTu21FDnbq8c9A.webp); 
+}
+
+#water:active, #snake:active, #gun:active {
+    transform: scale(0.95); 
+    border-color: black;
+}
+#water:hover, #snake:hover, #gun:hover{
+    box-shadow: 0 0 10px aqua; 
+    border-color: black;
+    border-width: 4px;
+}
+
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 3px 4px rgb(0, 255, 157);
+
+}
+h2{
+    text-align: center;
+    text-shadow: 2px 3px 4px rgb(0, 255, 157);
+    margin-top: 50px;
+    font-weight: lighter;
+}
+
+.Design{
+    display: flex;
+    justify-content: space-evenly; /* Distribute buttons evenly */
+    align-items: center;
+    margin-top: 130px;
+
+}
+
+#Text{
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    text-shadow: 2px 3px 4px rgb(0, 255, 157);
+
+}
+#playAgainBtn {
+    height: 80px;
+    width: 150px;
+    color: rgb(1, 2, 3);
+    font-size: 15px;
+    font-family: Arial, sans-serif; 
+    padding: 15px;
+    border: 5px solid rgb(0, 255, 157);
+    margin: 3px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease, border-color 0.2s ease; 
+    align-items: center;
+    position: absolute; 
+    top: 86%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+
+}
+
+#playAgainBtn:hover{
+    border-color: lightseagreen;
+    box-shadow: 0 0 10px lightseagreen;
+
+}
+
+
+#playAgainBtn:disabled {
+    background-color: #d3d3d3; 
+    color: #888; 
+    cursor: not-allowed; 
+
+}
+
+
